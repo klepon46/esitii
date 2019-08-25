@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="log_inputs_marg_Bottom">10dp</dimen>
+    <dimen name="log_inputs_marg_edges">15dp</dimen>
+    <dimen name="log_inputs_marg_edges_half">7.5dp</dimen>
+
+    <dimen name="font_1">30.0sp</dimen>
+    <dimen name="font_2">20.0sp</dimen>
+    <dimen name="font_3">19.0sp</dimen>
+    <dimen name="font_4">18.0sp</dimen>
+    <dimen name="font_5">17.0sp</dimen>
+    <dimen name="font_6">16.0sp</dimen>
+    <dimen name="font_7">15.0sp</dimen>
+    <dimen name="font_8">14.0sp</dimen>
+    <dimen name="font_9">12.0sp</dimen>
+    <dimen name="font_10">10.0sp</dimen>
+
+
+    <dimen name="padding_arround1">5.0dp</dimen>
+    <dimen name="padding_arround2">10.0dp</dimen>
+    <dimen name="padding_arround3">15.0dp</dimen>
+    <dimen name="padding_arround4">20.0dp</dimen>
+    <dimen name="padding_arround5">25.0dp</dimen>
+    <dimen name="padding_arround6">30.0dp</dimen>
+    <dimen name="padding_arround7">35.0dp</dimen>
+    <dimen name="height_nav_bar">70.0dp</dimen>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="nav_header_vertical_spacing">8dp</dimen>
+    <dimen name="nav_header_height">176dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <dimen name="main_btn_width">60dp</dimen>
+    <dimen name="main_btn_height">60dp</dimen>
+
+    <dimen name="card_width">100dp</dimen>
+    <dimen name="card_height">100dp</dimen>
+
+    <dimen name="card_text_size">10sp</dimen>
+
+    <dimen name="rem_img_width">20dp</dimen>
+    <dimen name="rem_img_height">20dp</dimen>
+
+    <dimen name="left_card_margin">10dp</dimen>
+
+
+</resources>
