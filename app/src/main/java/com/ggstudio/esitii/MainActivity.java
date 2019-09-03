@@ -1,13 +1,19 @@
 package com.ggstudio.esitii;
 
+import android.content.Intent;
 import android.media.Image;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.CardView;
+import android.util.Log;
+import android.view.View;
 import android.widget.ImageView;
 
 import com.bumptech.glide.Glide;
+import com.ggstudio.esitii.activities.RegulasiActivity;
+import com.ggstudio.esitii.activities.SopActivity;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -15,6 +21,25 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         populateFields();
+    }
+
+    @Override
+    public void onClick(View v) {
+
+        Intent intent = new Intent();
+
+        switch (v.getId()) {
+            case R.id.card_regulasi:
+                intent.setClass(this, RegulasiActivity.class);
+                startActivity(intent);
+                break;
+            case R.id.card_sop:
+                intent.setClass(this, SopActivity.class);
+                startActivity(intent);
+                break;
+            default:
+                break;
+        }
     }
 
     public void populateFields() {
@@ -33,5 +58,15 @@ public class MainActivity extends AppCompatActivity {
         Glide.with(this).load(R.mipmap.img_other).into(ivOther1);
         Glide.with(this).load(R.mipmap.img_other).into(ivOther2);
         Glide.with(this).load(R.mipmap.img_other).into(ivOther3);
+
+
+        CardView cardRegulasi = findViewById(R.id.card_regulasi);
+        CardView cardSop = findViewById(R.id.card_sop);
+
+        cardRegulasi.setOnClickListener(this);
+        cardSop.setOnClickListener(this);
+
     }
+
+
 }
