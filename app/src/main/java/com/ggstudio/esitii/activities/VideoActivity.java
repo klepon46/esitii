@@ -1,37 +1,80 @@
 package com.ggstudio.esitii.activities;
 
-import android.content.pm.ActivityInfo;
-import android.net.Uri;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.widget.MediaController;
-import android.widget.VideoView;
+import android.support.annotation.Nullable;
+import android.support.design.widget.TabLayout;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentPagerAdapter;
+import android.support.v4.view.ViewPager;
+import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
+
 
 import com.ggstudio.esitii.R;
+import com.ggstudio.esitii.fragments.DocumentGuideFragment;
+import com.ggstudio.esitii.fragments.VideoSiinasFragment;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class VideoActivity extends AppCompatActivity {
+
+    private Toolbar toolbar;
+    private ViewPager viewPager;
+    private TabLayout tabLayout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_video);
 
-        this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
+        Toolbar toolbar = findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setDisplayShowHomeEnabled(true);
 
-//        getSupportActionBar().setHomeButtonEnabled(true);
-//        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        ViewPager viewPager = findViewById(R.id.viewpager_siinas);
+        setupViewPager(viewPager);
 
-        VideoView vidView = findViewById(R.id.vid_view);
+        TabLayout tabLayout = findViewById(R.id.tab_layout_siinas);
+        tabLayout.setupWithViewPager(viewPager);
+    }
 
+    private void setupViewPager(ViewPager viewPager) {
+        ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
+        adapter.addFragment(new DocumentGuideFragment(), "Document");
+        adapter.addFragment(new VideoSiinasFragment(), "Video");
+        viewPager.setAdapter(adapter);
+    }
 
-        String path = "android.resource://" + getPackageName() + "/" + R.raw.vidsiinas;
+    class ViewPagerAdapter extends FragmentPagerAdapter {
+        private final List<Fragment> mFragmentList = new ArrayList<>();
+        private final List<String> mFragmentTitleList = new ArrayList<>();
 
-        MediaController mc = new MediaController(this);
-        mc.setAnchorView(vidView);
-        //mc.show(1000);
+        public ViewPagerAdapter(FragmentManager fm) {
+            super(fm);
+        }
 
-        vidView.setMediaController(mc);
-        vidView.setVideoURI(Uri.parse(path));
-        vidView.start();
+        @Override
+        public Fragment getItem(int position) {
+            return mFragmentList.get(position);
+        }
+
+        @Override
+        public int getCount() {
+            return mFragmentList.size();
+        }
+
+        public void addFragment(Fragment fragment, String title) {
+            mFragmentList.add(fragment);
+            mFragmentTitleList.add(title);
+        }
+
+        @Nullable
+        @Override
+        public CharSequence getPageTitle(int position) {
+            return mFragmentTitleList.get(position);
+        }
     }
 }
