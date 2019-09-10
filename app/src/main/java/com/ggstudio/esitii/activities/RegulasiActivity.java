@@ -19,7 +19,7 @@ public class RegulasiActivity extends AppCompatActivity {
         getSupportActionBar().setHomeButtonEnabled(true);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-        pdfView.fromAsset("PanduanPL-IUI.pdf")
+        pdfView.fromAsset("PERMENPERIN-15-2019.pdf")
                 .defaultPage(0)
                 .enableSwipe(true)
                 .scrollHandle(new DefaultScrollHandle(this))

@@ -12,6 +12,7 @@ import android.widget.ImageView;
 import com.bumptech.glide.Glide;
 import com.ggstudio.esitii.activities.RegulasiActivity;
 import com.ggstudio.esitii.activities.SopActivity;
+import com.ggstudio.esitii.activities.VideoActivity;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -35,6 +36,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.card_sop:
                 intent.setClass(this, SopActivity.class);
+                startActivity(intent);
+                break;
+            case R.id.card_video:
+                intent.setClass(this, VideoActivity.class);
                 startActivity(intent);
                 break;
             default:
@@ -62,9 +67,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         CardView cardRegulasi = findViewById(R.id.card_regulasi);
         CardView cardSop = findViewById(R.id.card_sop);
+        CardView cardVideo = findViewById(R.id.card_video);
 
         cardRegulasi.setOnClickListener(this);
         cardSop.setOnClickListener(this);
+        cardVideo.setOnClickListener(this);
 
     }
 

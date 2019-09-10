@@ -19,7 +19,7 @@ public class SopActivity extends AppCompatActivity {
         getSupportActionBar().setHomeButtonEnabled(true);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-        pdfView.fromAsset("PERMENPERIN-15-2019.pdf")
+        pdfView.fromAsset("PanduanPL-IUI.pdf")
                 .defaultPage(0)
                 .enableSwipe(true)
                 .scrollHandle(new DefaultScrollHandle(this))
