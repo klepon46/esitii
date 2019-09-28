@@ -16,10 +16,12 @@ public class RegulasiActivity extends AppCompatActivity {
 
         PDFView pdfView = findViewById(R.id.pdf_view);
 
+        String uri = getIntent().getStringExtra("uri");
+
         getSupportActionBar().setHomeButtonEnabled(true);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-        pdfView.fromAsset("PERMENPERIN-15-2019.pdf")
+        pdfView.fromAsset(uri)
                 .defaultPage(0)
                 .enableSwipe(true)
                 .scrollHandle(new DefaultScrollHandle(this))

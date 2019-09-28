@@ -14,15 +14,15 @@ public class SopActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sop);
 
-        PDFView pdfView = findViewById(R.id.pdf_view_sop);
+//        PDFView pdfView = findViewById(R.id.pdf_view_sop);
 
         getSupportActionBar().setHomeButtonEnabled(true);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-        pdfView.fromAsset("PanduanPL-IUI.pdf")
-                .defaultPage(0)
-                .enableSwipe(true)
-                .scrollHandle(new DefaultScrollHandle(this))
-                .load();
+//        pdfView.fromAsset("PanduanPL-IUI.pdf")
+//                .defaultPage(0)
+//                .enableSwipe(true)
+//                .scrollHandle(new DefaultScrollHandle(this))
+//                .load();
     }
 }

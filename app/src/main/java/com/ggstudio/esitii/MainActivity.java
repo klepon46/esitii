@@ -1,16 +1,15 @@
 package com.ggstudio.esitii;
 
 import android.content.Intent;
-import android.media.Image;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.CardView;
-import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
 
 import com.bumptech.glide.Glide;
 import com.ggstudio.esitii.activities.RegulasiActivity;
+import com.ggstudio.esitii.activities.RegulasiListActivity;
 import com.ggstudio.esitii.activities.SopActivity;
 import com.ggstudio.esitii.activities.VideoActivity;
 
@@ -31,7 +30,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         switch (v.getId()) {
             case R.id.card_regulasi:
-                intent.setClass(this, RegulasiActivity.class);
+                intent.setClass(this, RegulasiListActivity.class);
                 startActivity(intent);
                 break;
             case R.id.card_sop:
@@ -60,9 +59,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         Glide.with(this).load(R.mipmap.book_guide).into(ivInformation);
         Glide.with(this).load(R.mipmap.paper).into(ivRegualasi);
         Glide.with(this).load(R.mipmap.video).into(ivVideo);
-        Glide.with(this).load(R.mipmap.img_other).into(ivOther1);
+        Glide.with(this).load(R.mipmap.activity).into(ivOther1);
         Glide.with(this).load(R.mipmap.img_other).into(ivOther2);
-        Glide.with(this).load(R.mipmap.img_other).into(ivOther3);
+        Glide.with(this).load(R.mipmap.ask).into(ivOther3);
 
 
         CardView cardRegulasi = findViewById(R.id.card_regulasi);

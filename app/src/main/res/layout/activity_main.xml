@@ -101,7 +101,7 @@
                         android:layout_below="@id/imgRegulasi"
                         android:layout_centerInParent="true"
                         android:gravity="center"
-                        android:text="Regulasi IUI"
+                        android:text="Regulasi"
                         android:textSize="@dimen/card_text_size"
                         android:textStyle="bold" />
 
@@ -276,7 +276,7 @@
                         android:layout_below="@id/img_other2"
                         android:layout_centerInParent="true"
                         android:gravity="center"
-                        android:text="IUI Tabalong"
+                        android:text="Informasi Lain"
                         android:textSize="@dimen/card_text_size"
                         android:textStyle="bold" />
 
@@ -318,7 +318,7 @@
                         android:layout_below="@id/img_other3"
                         android:layout_centerInParent="true"
                         android:gravity="center"
-                        android:text="Informasi Lain"
+                        android:text="Ask Me"
                         android:textSize="@dimen/card_text_size"
                         android:textStyle="bold" />
 
