@@ -8,10 +8,10 @@ import android.view.View;
 import android.widget.ImageView;
 
 import com.bumptech.glide.Glide;
-import com.ggstudio.esitii.activities.RegulasiActivity;
 import com.ggstudio.esitii.activities.RegulasiListActivity;
-import com.ggstudio.esitii.activities.SopActivity;
+import com.ggstudio.esitii.activities.PanduanActivity;
 import com.ggstudio.esitii.activities.VideoActivity;
+import com.ggstudio.esitii.activities.VideoOldActivity;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -34,11 +34,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 startActivity(intent);
                 break;
             case R.id.card_sop:
-                intent.setClass(this, SopActivity.class);
+                intent.setClass(this, PanduanActivity.class);
                 startActivity(intent);
                 break;
             case R.id.card_video:
-                intent.setClass(this, VideoActivity.class);
+                intent.setClass(this, VideoOldActivity.class);
                 startActivity(intent);
                 break;
             default:

@@ -7,22 +7,22 @@ import com.ggstudio.esitii.R;
 import com.github.barteksc.pdfviewer.PDFView;
 import com.github.barteksc.pdfviewer.scroll.DefaultScrollHandle;
 
-public class SopActivity extends AppCompatActivity {
+public class PanduanActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_sop);
+        setContentView(R.layout.activity_panduan);
 
-//        PDFView pdfView = findViewById(R.id.pdf_view_sop);
+        PDFView pdfView = findViewById(R.id.pdf_view_panduan);
 
         getSupportActionBar().setHomeButtonEnabled(true);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-//        pdfView.fromAsset("PanduanPL-IUI.pdf")
-//                .defaultPage(0)
-//                .enableSwipe(true)
-//                .scrollHandle(new DefaultScrollHandle(this))
-//                .load();
+        pdfView.fromAsset("PanduanPL-IUI.pdf")
+                .defaultPage(0)
+                .enableSwipe(true)
+                .scrollHandle(new DefaultScrollHandle(this))
+                .load();
     }
 }

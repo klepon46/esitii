@@ -22,7 +22,7 @@
             android:name=".activities.RegulasiActivity"
             android:parentActivityName=".activities.RegulasiListActivity" />
         <activity
-            android:name=".activities.SopActivity"
+            android:name=".activities.PanduanActivity"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".activities.VideoActivity"
@@ -30,6 +30,9 @@
             android:theme="@style/MainTheme" />
         <activity
             android:name=".activities.RegulasiListActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".activities.VideoOldActivity"
             android:parentActivityName=".MainActivity"></activity>
     </application>
 

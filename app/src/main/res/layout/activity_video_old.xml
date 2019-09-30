@@ -4,17 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.ggstudio.esitii.activities.SopActivity">
+    android:background="@android:color/background_dark"
+    tools:context="com.ggstudio.esitii.activities.VideoOldActivity">
 
-    <!--<com.github.barteksc.pdfviewer.PDFView-->
-    <!--android:id="@+id/pdf_view_sop"-->
-    <!--android:layout_width="match_parent"-->
-    <!--android:layout_height="match_parent"></com.github.barteksc.pdfviewer.PDFView>-->
-
-    <TextView
-        android:layout_width="wrap_content"
+    <VideoView
+        android:id="@+id/vid_view"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Coming soon"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
