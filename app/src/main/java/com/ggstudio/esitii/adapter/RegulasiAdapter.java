@@ -66,6 +66,8 @@ public class RegulasiAdapter extends RecyclerView.Adapter<RegulasiAdapter.ViewHo
             super(itemView);
             title = itemView.findViewById(R.id.item_title);
             desc = itemView.findViewById(R.id.item_desc);
+
+            title.setTextColor(itemView.getResources().getColor(R.color.end_green));
         }
     }
 

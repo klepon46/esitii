@@ -18,6 +18,10 @@ public class VideoOldActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_video_old);
 
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setDisplayShowHomeEnabled(true);
+        getSupportActionBar().setBackgroundDrawable(getResources()
+                .getDrawable(R.drawable.gradient_background));
 
         vidView = findViewById(R.id.vid_view);
 

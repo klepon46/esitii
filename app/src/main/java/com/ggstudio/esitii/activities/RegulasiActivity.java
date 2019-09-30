@@ -20,6 +20,8 @@ public class RegulasiActivity extends AppCompatActivity {
 
         getSupportActionBar().setHomeButtonEnabled(true);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setBackgroundDrawable(getResources()
+                .getDrawable(R.drawable.gradient_background));
 
         pdfView.fromAsset(uri)
                 .defaultPage(0)

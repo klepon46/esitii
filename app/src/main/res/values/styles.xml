@@ -4,19 +4,20 @@
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorPrimaryDark">@color/start_green</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
     <style name="MainTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorPrimaryDark">@color/start_green</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
     <style name="ToolbarTheme" parent="@style/ThemeOverlay.AppCompat.ActionBar">
         <item name="colorControlNormal">@color/colorWhite</item>
+        <item name="android:background">@drawable/gradient_background</item>
     </style>
 
 </resources>

@@ -33,6 +33,8 @@ public class VideoActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
+        getSupportActionBar().setBackgroundDrawable(getResources()
+                .getDrawable(R.drawable.gradient_background));
 
         ViewPager viewPager = findViewById(R.id.viewpager_siinas);
         setupViewPager(viewPager);
