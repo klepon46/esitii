@@ -46,8 +46,8 @@ public class RegulasiListActivity extends AppCompatActivity {
         regulasis.add(regulasi);
 
         regulasi = new Regulasi("Perbup Tabalong No.49 2016",
-                "Pelimpahan Kewenangan di Bidang Perizinan dan " +
-                        "Non Perizinan Kepada Kepala DPMPTSP",
+                "Kedudukan, SO, Tugas dan Fungsi serta Tata Kerja Dinas Perindustrian " +
+                        "dan Perdagangan",
                 "PERBUP-Tabalong-No-49-Tahun-2016.pdf");
         regulasis.add(regulasi);
 
