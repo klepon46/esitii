@@ -1,9 +1,9 @@
 <resources>
-    <string name="app_name">e-sitii</string>
+    <string name="app_name">e-SIITI</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="esitii">e-siiti merupakan suatu sistem berbasis Teknologi
-        Informasi secara elektronik untuk memberikan fasilitas layanan layanan/informasi/panduan
-    penggunaan oss kepada masyarakat luas.</string>
+    <string name="esitii">e-SIITI merupakan suatu sistem berbasis Teknologi Informasi secara
+    elektronik berupa Fasilitasi layanan/informasi/panduan akses Sistem Informasi Nasional
+    (SIINas) terhadap Izin Usaha Industri yang terbit di OSS</string>
 </resources>

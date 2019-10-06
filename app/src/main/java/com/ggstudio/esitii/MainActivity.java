@@ -9,6 +9,7 @@ import android.widget.Button;
 import android.widget.ImageView;
 
 import com.bumptech.glide.Glide;
+import com.ggstudio.esitii.activities.ContactUsActivity;
 import com.ggstudio.esitii.activities.ReadMoreActivity;
 import com.ggstudio.esitii.activities.RegulasiListActivity;
 import com.ggstudio.esitii.activities.PanduanActivity;
@@ -46,6 +47,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.btn_read_more:
                 intent.setClass(this, ReadMoreActivity.class);
                 startActivity(intent);
+                break;
+            case R.id.card_other3:
+                intent.setClass(this, ContactUsActivity.class);
+                startActivity(intent);
+                break;
             default:
                 break;
         }
@@ -62,21 +68,23 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         ImageView ivOther3 = findViewById(R.id.img_other3);
         Button btnReadMore = findViewById(R.id.btn_read_more);
 
-        Glide.with(this).load(R.mipmap.book_guide).into(ivInformation);
-        Glide.with(this).load(R.mipmap.paper).into(ivRegualasi);
-        Glide.with(this).load(R.mipmap.video).into(ivVideo);
-        Glide.with(this).load(R.mipmap.activity).into(ivOther1);
-        Glide.with(this).load(R.mipmap.img_other).into(ivOther2);
-        Glide.with(this).load(R.mipmap.ask).into(ivOther3);
+        Glide.with(this).load(R.mipmap.img_panduan_new).into(ivInformation);
+        Glide.with(this).load(R.mipmap.img_regulasi_new).into(ivRegualasi);
+        Glide.with(this).load(R.mipmap.img_vid_new).into(ivVideo);
+        Glide.with(this).load(R.mipmap.img_manual).into(ivOther1);
+        Glide.with(this).load(R.mipmap.img_informasi_new).into(ivOther2);
+        Glide.with(this).load(R.mipmap.img_contact_new).into(ivOther3);
 
 
         CardView cardRegulasi = findViewById(R.id.card_regulasi);
         CardView cardSop = findViewById(R.id.card_sop);
         CardView cardVideo = findViewById(R.id.card_video);
+        CardView cardContactUs = findViewById(R.id.card_other3);
 
         cardRegulasi.setOnClickListener(this);
         cardSop.setOnClickListener(this);
         cardVideo.setOnClickListener(this);
+        cardContactUs.setOnClickListener(this);
         btnReadMore.setOnClickListener(this);
 
     }

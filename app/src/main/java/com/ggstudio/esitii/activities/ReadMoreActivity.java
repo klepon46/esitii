@@ -26,14 +26,14 @@ public class ReadMoreActivity extends AppCompatActivity {
 
 
     public void initData() {
-        String str = "e-siiti merupakan suatu sistem berbasis teknologi informasi " +
-                "secara elektronik untuk memberikan fasilitas layanan/informasi/panduan " +
-                "penggunaan oss kepada masyarakat luas. \n \n" +
-                "Adapun tujuan yang ingin dicapapai adalah untuk penyebarluasan informasi " +
+        String str = "e-SIITI merupakan suatu sistem berbasis Teknologi Informasi secara " +
+                "elektronik untuk memberikan fasilitas layanan/panduan Sistem Informasi " +
+                "Industri Nasional (SIINas) kepada masyarakat luas. \n \n" +
+                "Adapun tujuan yang ingin dicapai adalah untuk penyebarluasan informasi " +
                 "panduan kepada masyarakat dalam rangka menyokong proses layanan perizinan " +
                 "yang mudah, efektif dan efesien sesuai dengan perkembangan ketentuan " +
                 "peraturan perundang-undangan dan dalam rangka percepatan peningkatan " +
-                "penanaman modal dan berusaha sektor industri";
+                "penanaman modal dan berusaha sektor industri.";
         textView.setText(str);
     }
 
