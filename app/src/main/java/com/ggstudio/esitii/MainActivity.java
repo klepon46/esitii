@@ -13,8 +13,10 @@ import com.ggstudio.esitii.activities.ContactUsActivity;
 import com.ggstudio.esitii.activities.ReadMoreActivity;
 import com.ggstudio.esitii.activities.RegulasiListActivity;
 import com.ggstudio.esitii.activities.PanduanActivity;
+import com.ggstudio.esitii.activities.RegulasiNewActivity;
 import com.ggstudio.esitii.activities.VideoActivity;
 import com.ggstudio.esitii.activities.VideoOldActivity;
+import com.ggstudio.esitii.activities.WebViewActivity;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -33,19 +35,27 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         switch (v.getId()) {
             case R.id.card_regulasi:
-                intent.setClass(this, RegulasiListActivity.class);
+                intent.setClass(this, RegulasiNewActivity.class);
                 startActivity(intent);
                 break;
             case R.id.card_sop:
-                intent.setClass(this, PanduanActivity.class);
+                intent.setClass(this, WebViewActivity.class);
                 startActivity(intent);
                 break;
             case R.id.card_video:
-                intent.setClass(this, VideoOldActivity.class);
-                startActivity(intent);
+//                intent.setClass(this, VideoOldActivity.class);
+//                startActivity(intent);
                 break;
             case R.id.btn_read_more:
                 intent.setClass(this, ReadMoreActivity.class);
+                startActivity(intent);
+                break;
+            case R.id.card_other1:
+                intent.setClass(this, VideoOldActivity.class);
+                startActivity(intent);
+                break;
+            case R.id.card_other2:
+                intent.setClass(this, PanduanActivity.class);
                 startActivity(intent);
                 break;
             case R.id.card_other3:
@@ -68,7 +78,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         ImageView ivOther3 = findViewById(R.id.img_other3);
         Button btnReadMore = findViewById(R.id.btn_read_more);
 
-        Glide.with(this).load(R.mipmap.img_panduan_new).into(ivInformation);
+        Glide.with(this).load(R.mipmap.ic_siinas).into(ivInformation);
         Glide.with(this).load(R.mipmap.img_regulasi_new).into(ivRegualasi);
         Glide.with(this).load(R.mipmap.img_vid_new).into(ivVideo);
         Glide.with(this).load(R.mipmap.img_manual).into(ivOther1);
@@ -79,12 +89,16 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         CardView cardRegulasi = findViewById(R.id.card_regulasi);
         CardView cardSop = findViewById(R.id.card_sop);
         CardView cardVideo = findViewById(R.id.card_video);
+        CardView cardInformasiLain = findViewById(R.id.card_other1);
+        CardView cardManual = findViewById(R.id.card_other2);
         CardView cardContactUs = findViewById(R.id.card_other3);
 
         cardRegulasi.setOnClickListener(this);
         cardSop.setOnClickListener(this);
         cardVideo.setOnClickListener(this);
         cardContactUs.setOnClickListener(this);
+        cardInformasiLain.setOnClickListener(this);
+        cardManual.setOnClickListener(this);
         btnReadMore.setOnClickListener(this);
 
     }

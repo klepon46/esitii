@@ -60,9 +60,19 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
-                android:layout_marginBottom="14dp"
-                android:text="Pemerintah Kabupaten Tabalong Dinas Perindustrian dan Perdagangan Bidang Perindustrian"
+                android:text="Pemerintah Kabupaten Tabalong "
                 android:textAlignment="center"
+                android:textSize="10sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="14dp"
+                android:text="Dinas Perindustrian dan Perdagangan"
+                android:textAlignment="center"
+                android:textSize="12sp"
                 android:textStyle="bold" />
 
 
@@ -72,7 +82,7 @@
                 android:drawableLeft="@mipmap/ic_location"
                 android:gravity="center_vertical"
                 android:paddingLeft="@dimen/row_padding_vertical"
-                android:text="Jln. Ir. P.H.M Noor No.16B RT.04 Pembataan, Murung Pudak 17571" />
+                android:text="Jln. Ir. P.H.M Noor No.16B RT.04 Pembataan, Murung Pudak 71571" />
 
             <View
                 android:layout_width="match_parent"
@@ -90,7 +100,7 @@
                 android:drawableLeft="@mipmap/ic_phone"
                 android:gravity="center_vertical"
                 android:paddingLeft="@dimen/row_padding_vertical"
-                android:text="(0526) 2721412 " />
+                android:text="0812-3193-7075 " />
 
             <View
                 android:layout_width="match_parent"
@@ -108,7 +118,7 @@
                 android:gravity="center_vertical"
                 android:inputType="textUri"
                 android:paddingLeft="@dimen/row_padding_vertical"
-                android:text="www.tabalongkab.go.id" />
+                android:text="Ind.bersinar@gmail.com" />
 
             <View
                 android:layout_width="match_parent"

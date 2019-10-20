@@ -17,7 +17,7 @@
 
     <style name="ToolbarTheme" parent="@style/ThemeOverlay.AppCompat.ActionBar">
         <item name="colorControlNormal">@color/colorWhite</item>
-        <item name="android:background">@drawable/gradient_background</item>
+        <!--<item name="android:background">@drawable/gradient_background</item>-->
     </style>
 
 </resources>
